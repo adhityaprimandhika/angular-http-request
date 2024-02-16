@@ -1,0 +1,11 @@
+<div *ngIf="anime$ | async as anime" class="p-8">
+  <div class="flex gap-12">
+    <div>
+      <img [src]="anime.images.webp.large_image_url" />
+    </div>
+    <div class="max-w-[500px]">
+      <h3 class="text-4xl"> {{anime.title}}</h3>
+      <p class="mt-4">{{anime.synopsis}}</p>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,10 @@
-<router-outlet></router-outlet>
+<nav class="p-4 bg-teal-600 text-slate-200 flex justify-between">
+  <div class="flex gap-8">
+    <a [routerLink]="['anime']"><button>Anime</button></a>
+    <a [routerLink]="['manga']"><button>Manga</button></a>
+  </div>
+
+  <a [routerLink]="['login']"><button>Login</button></a>
+  <!-- <a [routerLink]="['Manga']"><button>Manga</button></a> -->
+</nav>
+<router-outlet />

@@ -1,0 +1,10 @@
+<div class="p-8 flex justify-center">
+  <form #user="ngForm" (ngSubmit)="onSubmit(user)"
+    class="flex flex-col gap-3 bg-slate-500 px-20 pt-10 pb-12 rounded-lg">
+    <span class="text-white">Username</span>
+    <input ngModel type="text" class="border-2 border-solid border-gray-700 rounded-lg" name="username" required />
+    <span class="text-white">Password</span>
+    <input ngModel type="password" class="border-2 border-solid border-gray-700 rounded-lg" name="password" required />
+    <button class="mt-4 bg-white rounded-lg text-slate-700 border-none">Submit</button>
+  </form>
+</div>
